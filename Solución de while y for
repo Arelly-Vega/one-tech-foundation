@@ -1,0 +1,3453 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Arelly-Vega/one-tech-foundation/blob/main/Soluci%C3%B3n%20de%20while%20y%20for\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Python para Data Science\n",
+        "\n",
+        "Notebook para el curso de Python para Data Science publicado en la plataforma de [Alura Latam](https://www.aluracursos.com/)"
+      ],
+      "metadata": {
+        "id": "lQx6Mmv0OJyT"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Introducción a Python\n",
+        "¡Vamos a conocer Python, nuestro ambiente de estudio, y también generaremos nuestro primer código en este lenguaje!"
+      ],
+      "metadata": {
+        "id": "7SiB6JIpYKmY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Google Colaboratory\n",
+        "\n",
+        "Ya aprendimos qué es [Python](https://www.python.org/) y ahora aprenderemos a usar nuestra herramienta de ejecución [Google Colaboratory](https://colab.research.google.com/) para programar en un notebook interactivo.\n",
+        "\n",
+        "Vamos a probar algunas funciones de este ambiente."
+      ],
+      "metadata": {
+        "id": "Yugfb3fCOYY9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " **`>>> Usa esta celda para mover <<<`**"
+      ],
+      "metadata": {
+        "id": "2iUHQsJasJAk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "o7jrX_iKhdkU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## ¡Hola mundo!\n",
+        "\n",
+        "Vamos a conocer un poco más de cerca nuestro notebook. Para ello ejecutaremos nuestro primer comando en Python: [`print()`](https://docs.python.org/3/library/functions.html#print)"
+      ],
+      "metadata": {
+        "id": "aLSFP2V7XTfe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hola mundo\")"
+      ],
+      "metadata": {
+        "id": "0qZX8_ZQBYyk",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "879a7c06-6de0-495b-a695-caf42dc8e6df"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hola mundo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Nombre:[tu nombre]\")"
+      ],
+      "metadata": {
+        "id": "GLMzF_AKBY7a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6e08a4a5-8eb3-4a8a-e0e1-413a48b6708a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nombre:[tu nombre]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(list(\"ALVARO\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m0h00M5w0ZX0",
+        "outputId": "edb79249-b54a-4682-9d69-9c3f0fe99d01"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['A', 'L', 'V', 'A', 'R', 'O']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(28, \"febrero\", 2003)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nzpU6xRW0hCi",
+        "outputId": "5d2f3458-62cd-4290-ab71-331d6bfd34eb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "28 febrero 2003\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Año actual: \",2003)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tAfT6nH10lyg",
+        "outputId": "fc5ba176-7783-4aeb-dc12-f7e825a89acb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Año actual:  2003\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Manipulando los datos\n",
+        "\n",
+        "Vamos a aprender sobre las variables en Python, cómo declararlas y utilizarlas además de conocer otros comandos de este lenguaje. :D"
+      ],
+      "metadata": {
+        "id": "iP8uWQmFYFRs"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Variables\n",
+        "\n",
+        "En Data Science trabajamos con varios tipos de datos e informaciones, entonces es esencial saber cómo trabajar con las variables."
+      ],
+      "metadata": {
+        "id": "sLNVmnTbag1Z"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Las variables en Python se crean cuando atribuimos un valor a ella.\n",
+        "\n",
+        "Para esto, colocamos el nombre de la variable, el signo de igual (`=`) y el valor que queremos atribuirle."
+      ],
+      "metadata": {
+        "id": "lsCY0wahAbf6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = 15"
+      ],
+      "metadata": {
+        "id": "vsHh5buZADND"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "decimal = 13.6"
+      ],
+      "metadata": {
+        "id": "J_iVns0f4Ah3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "verdad = \"True\""
+      ],
+      "metadata": {
+        "id": "sivPtqSjADQV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "verdadero = True"
+      ],
+      "metadata": {
+        "id": "SxLijbB_3uVq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Existen algunos tipos de nomes que **no** podemos definir para las variables:\n",
+        "\n",
+        "- **Nombres que comiencen con números**\n",
+        "  - Ejemplos: `10_notas`, `2_nombre_casa`, etc.\n",
+        "- **Palabras separadas por espacio**\n",
+        "  - Ejemplos: `Nombre escuela`, `notas estudiantes`, etc.\n",
+        "- **Nombres de funciones de Python**\n",
+        "  - Ejemplos: `print`, `type`, etc."
+      ],
+      "metadata": {
+        "id": "om2N0jHKAzwL"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "> Las letras mayúsculas y minúsculas generarán diferentes variables. La variable `edad` es diferente de `Edad` que a su vez es diferente de `EDAD`:\n",
+        "``` Python\n",
+        "edad = 1\n",
+        "Edad = 2\n",
+        "EDAD = 3\n",
+        "_edad = 4\n",
+        "_edad_ = 5\n",
+        "print(edad, Edad, EDAD, _edad, _edad_)\n",
+        "1 2 3 4 5\n",
+        "```"
+      ],
+      "metadata": {
+        "id": "A19vY2GVMujB"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Tipos de variables\n",
+        "\n",
+        "Cada variable contiene una clase específica con respecto al tipo de objeto al cual esta hace referencia. Estas clases serán diferentes de acuerdo con el tipo de dato que le sea atribuido a una variable.\n",
+        "\n",
+        "Para conocer la clase de cada elemento usamos la función [`type()`](https://docs.python.org/3/library/functions.html#type)"
+      ],
+      "metadata": {
+        "id": "UqhzuBhBHsps"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(decimal)"
+      ],
+      "metadata": {
+        "id": "J5a9t73A_-PX",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4ec17c09-7b1b-4909-d484-780ce5693c13"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "float"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(numero)"
+      ],
+      "metadata": {
+        "id": "rqmO1ew-_-So",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0167733c-8a35-4b3a-cb63-02f3a6956206"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "int"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(verdad)"
+      ],
+      "metadata": {
+        "id": "xkrPMkeY_-cP",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "02860b56-c1fd-49cb-aace-0728a674c7d1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "str"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(verdadero)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q-i0Gsqs4Yen",
+        "outputId": "f0d66ef4-a84e-4e0b-f097-278aa5231f37"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "bool"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "En un conjunto de datos escolares podemos tener varios tipos de informaciones. Supongamos que tenemos acceso a la ficha de datos del alumno *Penélope Camacho*, cómo transformamos este nombre en variables de Python?\n",
+        "\n",
+        "#### Ficha:\n",
+        "\n",
+        "- Nombre: Penélope Camacho\n",
+        "- Edad: 11 años\n",
+        "- Promedio del semestre: 9,75\n",
+        "- Situación de aprobación: Verdadera (aprobado)"
+      ],
+      "metadata": {
+        "id": "O-FxDumfWu0C"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre_estudiante = \"Penélope Camacho\""
+      ],
+      "metadata": {
+        "id": "FabQ7jQf_8Xt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "edad_estudiante = 11"
+      ],
+      "metadata": {
+        "id": "IZLQnZUj_8bd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "promedio_estudiante = 9.75"
+      ],
+      "metadata": {
+        "id": "WXN-4qQ84oRC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "aprobado = True"
+      ],
+      "metadata": {
+        "id": "Z_V2gwbf4to2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "id(nombre_estudiante)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PZnFKhJY402s",
+        "outputId": "f5da7093-81e0-4484-b25d-57f701d0368e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "138115740177136"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "id(edad_estudiante)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6lchmg9u443i",
+        "outputId": "41f3edf6-83c3-4afd-b822-ae8d77f44916"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "10751176"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "id(aprobado)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Nl-vLwHy47Ni",
+        "outputId": "1ab066fe-ef37-41e4-e6e0-450126ca14ee"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "9692800"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Variables numéricas\n",
+        "\n",
+        "Entre los tipos de datos numéricos vamos a enfocarnos en los tipos `entero` y `float`."
+      ],
+      "metadata": {
+        "id": "KFq_8Sxf-OG0"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tenemos una tabla de información sobre los diversos cargos, cantidad de personas empleadas y el salario correspondiente:\n",
+        "\n",
+        "|Cargo | Cantidad | Salario|\n",
+        "|---|---|---|\n",
+        "|Vigilante | 5 | 300 |\n",
+        "|Docente | 16| 500|\n",
+        "|Coordinador| 2 |600|\n",
+        "\n",
+        "Necesitamos trabajar con estos datos para obtener:\n",
+        "\n",
+        "- La cantidad total de empleados;\n",
+        "- La diferencia entre el salario más bajo y más alto; y\n",
+        "- El promedio ponderado de los salarios de los empleados de la escuela."
+      ],
+      "metadata": {
+        "id": "8_HYUbkVYdQY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c_vigilante = 5\n",
+        "s_vigilante = 300\n",
+        "\n",
+        "c_docente = 16\n",
+        "s_docente = 500\n",
+        "\n",
+        "c_coordinador = 2\n",
+        "s_coordinador = 600"
+      ],
+      "metadata": {
+        "id": "F_X-wxdm_5Ys"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "total_empleados = c_vigilante + c_coordinador + c_docente\n",
+        "total_empleados"
+      ],
+      "metadata": {
+        "id": "gKmBbhII_5b9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fc4f2888-c1b7-424e-f009-fca1d0f9e9fe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "23"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 32
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "diferencia_salario = s_coordinador - s_vigilante\n",
+        "diferencia_salario"
+      ],
+      "metadata": {
+        "id": "fIugsxNy_53j",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8fa99ace-ede4-41ff-af23-5e69431862cd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "300"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "promedio_salarios = (c_vigilante*s_vigilante + c_docente*s_docente + c_coordinador*s_coordinador)/3\n",
+        "promedio_salarios"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bP3JnU-R6145",
+        "outputId": "7345b401-66a8-472b-e3bf-e5f1a96b84f3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3566.6666666666665"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 34
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Strings"
+      ],
+      "metadata": {
+        "id": "yQy7b0ZWoD-P"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Strings hace referencia a un conjunto de caracteres formando un texto.\n",
+        "\n",
+        "Podemos crear Strings cuando atribuimos un dato a una variable entre comillas sencillas (`'`) o comillas dobles (`\"`)."
+      ],
+      "metadata": {
+        "id": "vlo2-DXusv3s"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto_prueba = 'Texto prueba'"
+      ],
+      "metadata": {
+        "id": "ityEWqvh_2wK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Las variables textuales son objetos que poseen métodos que nos ayudan a formatear strings. Los métodos los podemos ejecutar al definir un objeto de acuerdo con la siguiente estructura:\n",
+        "\n",
+        "```\n",
+        "objeto.metodo()\n",
+        "```\n",
+        "\n",
+        "Existen métodos que no necesitan los `()`, siempre es una buena práctica verificar la documentación para cada caso."
+      ],
+      "metadata": {
+        "id": "2e9UD_CCxqz_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "---\n",
+        "**Situación:**\n",
+        "\n",
+        "Recibimos una variable con el nombre de una profesora de la escuela para añadirla a los registros. Sin embargo, necesitamos darle un tratamiento a este texto antes de insertarlo al sistema."
+      ],
+      "metadata": {
+        "id": "p6aPmMGP4tf9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto = '  Micaela de los Sanyos '"
+      ],
+      "metadata": {
+        "id": "icDWtYTjBO0n"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "El objetivo final es que el nombre aparezca de la siguiente forma:\n",
+        "\n",
+        "```\n",
+        "'MICAELA DE LOS SANTOS'\n",
+        "```"
+      ],
+      "metadata": {
+        "id": "Dg2ZXSZOGzjC"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### [`str.upper()` ](https://docs.python.org/3/library/stdtypes.html#str.upper)\n",
+        "Convierte una string a mayúsculas."
+      ],
+      "metadata": {
+        "id": "iVTAD8q702eN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto.upper()"
+      ],
+      "metadata": {
+        "id": "wMVshJrY_ZXh",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "c6fd683b-276b-4135-f4a2-2319fefa197e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'  MICAELA DE LOS SANYOS '"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 40
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### [`str.lower()`](https://docs.python.org/3/library/stdtypes.html#str.lower)\n",
+        "Convierte una string a minúsculas."
+      ],
+      "metadata": {
+        "id": "hbDSBtMV1TpG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto.lower()"
+      ],
+      "metadata": {
+        "id": "px3yEeNH_YK4",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "ee40db3d-47a6-42e6-c91d-64b560a5416a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'  micaela de los sanyos '"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### [`str.strip()`](https://docs.python.org/3/library/stdtypes.html#str.strip)\n",
+        "Elimina los espacios en blanco al inicio y al final de una string."
+      ],
+      "metadata": {
+        "id": "kz47eWM11gii"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto.strip()"
+      ],
+      "metadata": {
+        "id": "76dLgNa4_XAe",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "ca19c48a-263b-415f-9713-7fd7d03dfb79"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Micaela de los Sanyos'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 42
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### [`str.replace(antiguo, nuevo)`](https://docs.python.org/3/library/stdtypes.html#str.replace)\n",
+        "\n",
+        "Sustituye todas las ocurrencias del texto \"antiguo\" en la string por el  \"nuevo\"."
+      ],
+      "metadata": {
+        "id": "m6notiyS1SCV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto.replace('y','t')"
+      ],
+      "metadata": {
+        "id": "PNXAixtE_V6R",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "94a1c838-5ef3-488d-c197-101dc95c0480"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'  Micaela de los Santos '"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Observaciones\n",
+        "\n",
+        "1. Los métodos devuelven una **tranformación**, no son ejecutados directamente sobre la variable donde está almacenado el texto.\n",
+        "\n",
+        "2. Adicionalmente, podemos acumular la ejecución de los métodos."
+      ],
+      "metadata": {
+        "id": "zukvEjhG2Rcn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto_nuevo = texto.replace('y','t').strip().upper()\n",
+        "texto_nuevo"
+      ],
+      "metadata": {
+        "id": "JjkBRklr_T5n",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "1d567753-0087-445c-8bfd-2dca8aa5b8dc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'MICAELA DE LOS SANTOS'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 45
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Para que la transformación se pueda ejecutar debemos atribuir la salida de las transformaciones a las variables"
+      ],
+      "metadata": {
+        "id": "1KbwfVut2h6I"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "id(texto)"
+      ],
+      "metadata": {
+        "id": "ocPP-Jaj_SJI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f7e78caf-c07b-4ac5-e92c-4e152157cb7d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "138115726370864"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 46
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "id(texto_nuevo)"
+      ],
+      "metadata": {
+        "id": "m1RvLGZZ_SP3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2b0653b8-d937-4246-a4d5-682dc62d933f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "138115727312976"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 47
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Capturando datos\n",
+        "\n",
+        "En algunas aplicaciones necesitamos capturar los valores del usuario de nuestro proyecto. En python, logramos capturar los datos del usuario a través del comando [`input()`](https://docs.python.org/3/library/functions.html#input).\n",
+        "\n",
+        "Para ejecutar la captura debemos atribuir el resultado de esta función a una variable."
+      ],
+      "metadata": {
+        "id": "0h9Fh5G9kHCa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "captura = input(\"Ingresa tu nombre: \")"
+      ],
+      "metadata": {
+        "id": "zbH_9i3q_PdY",
+        "outputId": "82bd6f6b-a6d0-40de-89cb-9d39e1a41968",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingresa tu nombre: Arelly\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(captura)"
+      ],
+      "metadata": {
+        "id": "JZy1Q9Tl_PgL",
+        "outputId": "cbfbb4dc-0585-488d-ec8d-262e93aac96f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Arelly\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "La salida de este comando siempre será una *string*. Esto quiere decir que aunque capturemos un valor de variable numérica, este será de tipo string.\n",
+        "\n",
+        "Entonces, será necesario **convertir el resultado cuando no se desea utilizar el valor como tipo string**."
+      ],
+      "metadata": {
+        "id": "7z7hcLCk_aCY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Existen funciones para la conversión de valores:\n",
+        "\n",
+        "- Enteros: [`int(dato_para_conversion)`](https://docs.python.org/3/library/functions.html#int)\n",
+        "- Coma flotante: [`float(dato_para_conversion)`](https://docs.python.org/3/library/functions.html#float)\n",
+        "- String: [`str(dato_para_conversion)`](https://docs.python.org/3/library/functions.html#func-str)\n",
+        "- Booleano: [`bool(dato_para_conversion)`](https://docs.python.org/3/library/functions.html#bool)"
+      ],
+      "metadata": {
+        "id": "TOlegATj1Jfp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "entero = int(input(\"Ingresa un número entero: \"))"
+      ],
+      "metadata": {
+        "id": "M2ueeH6l_NMe",
+        "outputId": "18e84c93-eedb-4662-9139-8881e0543c9b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingresa un número entero: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(entero)"
+      ],
+      "metadata": {
+        "id": "xfWwuViK_NUn",
+        "outputId": "e0bae2c9-fa08-4d0b-b4a4-8f14fab70d54",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "int"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "decimal = float(input(\"Ingresa un número decimal: \"))"
+      ],
+      "metadata": {
+        "id": "uFCHDyew_NZm",
+        "outputId": "747e9f9e-73e4-4fee-de3d-a7b4ba37ba74",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingresa un número decimal: 13.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(decimal)"
+      ],
+      "metadata": {
+        "id": "gmsxwJ5D7QbA",
+        "outputId": "8570fad1-2ee4-4536-b928-f2ab9dc8a76b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "float"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "booleano = bool(input(\"Ingresa un valor booleano: \"))"
+      ],
+      "metadata": {
+        "id": "FbStNeJ27R5L",
+        "outputId": "369d05a6-b179-43f2-8338-f11a016720a1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingresa un valor booleano: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(booleano)"
+      ],
+      "metadata": {
+        "id": "pPP9r0kV7ZHn",
+        "outputId": "b4af8496-1608-4cfd-f1dc-a066db4c8513",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "bool"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Trataremos de representar mejor ahora el resultado de la transformación que obtuvimos. Nosotros podemos formatear y presentar nuestro resultado mezclando strings con valores no textuales.\n",
+        "\n",
+        "Para ello utilizamos la estructura de formatación `f` con strings."
+      ],
+      "metadata": {
+        "id": "yNI2-XTbB3aS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"\\tEste es un texto \\n \\tpara probar las estructuras\\n \\tde formatación más comunes en consola\")"
+      ],
+      "metadata": {
+        "id": "keJjA5N9_K5i",
+        "outputId": "70064687-046e-4056-8407-fc77b16bc6af",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\tEste es un texto \n",
+            " \tpara probar las estructuras\n",
+            " \tde formatación más comunes en consola\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Hora de practicar"
+      ],
+      "metadata": {
+        "id": "q-lmufwY8Mov"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = input(\"Ingresa tu nombre: \")\n",
+        "edad = int(input(\"Ingresa tu edad: \"))\n",
+        "altura = float(input(\"Ingresa tu altura en metros: \"))\n",
+        "\n",
+        "print(f'Hola, {nombre}, tienes {edad} años y mides {altura} metros')"
+      ],
+      "metadata": {
+        "id": "24mGDf-k8qK5",
+        "outputId": "f7252824-7d59-407c-cc54-73d9c8d275b4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa tu nombre: Arelly\n",
+            "Ingresa tu edad: 20\n",
+            "Ingresa tu altura en metros: 1.53\n",
+            "Hola, Arelly, tienes 20 años y mides 1.53 metros\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num1 = int(input(\"Ingresa un número: \"))\n",
+        "num2 = int(input(\"Ingresa otro número: \"))\n",
+        "\n",
+        "print(num1+num2)"
+      ],
+      "metadata": {
+        "id": "IRnGLHnI9QpO",
+        "outputId": "904df798-e707-4398-86b7-b7ed53a7ada7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa un número: 20\n",
+            "Ingresa otro número: 12\n",
+            "32\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numerador = int(input(\"Ingresa el numerador: \"))\n",
+        "denominador = int(input(\"Ingresa el denominador: \"))\n",
+        "\n",
+        "if denominador == 0:\n",
+        "  print(\"No se puede dividir entre 0\")\n",
+        "else:\n",
+        "  print(numerador/denominador)\n"
+      ],
+      "metadata": {
+        "id": "gw91SqTl9gfR",
+        "outputId": "4ca9c30c-8a87-481c-b221-8434069b55ed",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa el numerador: 30\n",
+            "Ingresa el denominador: 3\n",
+            "10.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numerador = int(input(\"Ingresa el numerador: \"))\n",
+        "denominador = int(input(\"Ingresa el denominador: \"))\n",
+        "\n",
+        "if denominador == 0:\n",
+        "  print(\"No se puede dividir entre 0\")\n",
+        "else:\n",
+        "  print(numerador//denominador)"
+      ],
+      "metadata": {
+        "id": "VqTj1z1191zI",
+        "outputId": "ca1cc7ed-9c6e-4514-dffb-c8e67cd02d93",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa el numerador: 30\n",
+            "Ingresa el denominador: 7\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frase = str(input(\" Ingresa una frase:  \"))\n",
+        "print(frase.upper())\n",
+        "print(frase.lower())\n",
+        "print(frase.strip().lower())\n",
+        "print(frase.replace(\"e\",\"f\"))\n"
+      ],
+      "metadata": {
+        "id": "nciJTThk-WN8",
+        "outputId": "6b89c4ec-1d3e-4607-cd84-df2adf943c96",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Ingresa una frase:   Si la vida te da mandarinas  \n",
+            " SI LA VIDA TE DA MANDARINAS  \n",
+            " si la vida te da mandarinas  \n",
+            "si la vida te da mandarinas\n",
+            " Si la vida tf da mandarinas  \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Estructuras condicionales"
+      ],
+      "metadata": {
+        "id": "NwRaiHHHhhyl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## `IF` y `ELSE`\n",
+        "\n",
+        "Los comandos `if` y `else` son dos estructuras condicionales. El comando `if` ejecutará el bloque de comandos en caso de que la condición citada sea  **verdadera**. El comando `else` ejecutará el bloque de comandos en el caso de que la condicional de `if` sea **falsa**."
+      ],
+      "metadata": {
+        "id": "qXZqg9aYEhAh"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "El comando `if` es una palabra clave en Python que significa \"si\". Este se emplea para conformar la estructura condicional, que te permite verificar si una determinada condición es verdadera o falsa e, inmediatamente después, ejecute un bloque de código específico dependiendo del resultado de la verificación. La sintaxis para usar el comando `if` es:\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "if condicion:\n",
+        "    # Realiza algo\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "EIhlqHXd2Gil"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if 2 < 7:\n",
+        "  print(\"Verdadero\")"
+      ],
+      "metadata": {
+        "id": "SUSqtOCwNnn5",
+        "outputId": "e6eb268e-d208-476d-f823-302d7c799c04",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Verdadero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ya el comando `else` en Python se usa en junción con la palabra clave `if` para formar una estructura condicional. la sintaxis para usar el `else` es:\n",
+        "\n",
+        "```\n",
+        "if condicion:\n",
+        "  # codigo en caso de que sea verdad\n",
+        "else:\n",
+        "  # codigo en caso de que sea falso\n",
+        "```\n",
+        "\n",
+        "el comando `else` se ejecuta cuando la condición verificada por el `if` es evaluada como `False`."
+      ],
+      "metadata": {
+        "id": "27RW2v_sIKct"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if 2 > 7:\n",
+        "  print(\"Verdadero\")\n",
+        "else:\n",
+        "  print(\"False\")"
+      ],
+      "metadata": {
+        "id": "ZTfNJd_f-aOq",
+        "outputId": "acac1cc5-77e3-439b-869f-d2a1245267c3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "---\n",
+        "**Situación:**\n",
+        "\n",
+        "Recibiremos el promedio de la nota de los estudiantes y necesitamos de un algoritmo que ejecute el análisis y determine si el estudiante fue **Aprobado** o **Reprobado**, mostrando un mensaje del resultado. Para ser aprobado, el promedio necesita ser igual o superior a 7.0."
+      ],
+      "metadata": {
+        "id": "BqORg85XX-Nl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "promedio = float(input(\"Ingresa el promedio: \"))\n",
+        "\n",
+        "if promedio >= 7:\n",
+        "  print(\"Aprobado\")\n",
+        "else:\n",
+        "  print(\"Reprobado\")"
+      ],
+      "metadata": {
+        "id": "UukCN4AQ-YYW",
+        "outputId": "3cbe008e-eb5c-4a22-8a04-555b28d10403",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa el promedio: 6.9\n",
+            "Reprobado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ahora, nuestra institución educativa estableció que las personas que tengan el promedio entre 5.0 y 7.0 pueden participar del curso de **Recuperación** durante las vacaciones para lograr aprobar.\n",
+        "\n",
+        "Entonces podemos apoyarnos en un conjunto de `if`s para poder estructurar esta nueva condición."
+      ],
+      "metadata": {
+        "id": "bD9O17HB6LUo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "promedio = float(input(\"Ingrese el promedio: \"))\n",
+        "\n",
+        "if promedio >= 7:\n",
+        "  print(\"Aprobado\")\n",
+        "if 7 > promedio > 5:\n",
+        "  print(\"Recuperación\")\n",
+        "if promedio <= 5:\n",
+        "  print(\"Reprobado\")"
+      ],
+      "metadata": {
+        "id": "G9cJ5O9--W52",
+        "outputId": "6a023df9-df16-4f90-b932-6e5609b82808",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el promedio: 7.1\n",
+            "Aprobado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Observa que en casos con 3 situaciones como este necesitamos definir bien nuestras condiciones. Pues, si realizamos una condición con `else` al final, este irá a considerar solamente la condición `if` inmediatamente anterior para generar la salida en caso de que el resultado de su operación lógica sea **falso** dando como resultado, dos o más ejecuciones.\n",
+        "\n",
+        "Por ejemplo:"
+      ],
+      "metadata": {
+        "id": "D5e2mByjvycO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "promedio = float(input(\"Ingrese el promedio: \"))\n",
+        "\n",
+        "if promedio >= 7:\n",
+        "  print(\"Aprobado\")\n",
+        "if 7 > promedio > 5:\n",
+        "  print(\"Recuperación\")\n",
+        "else:\n",
+        "  print(\"Reprobado\")"
+      ],
+      "metadata": {
+        "id": "C21JmOuK-VU8",
+        "outputId": "f48901ae-2cbf-4374-e9c7-49104f656e84",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el promedio: 8\n",
+            "Aprobado\n",
+            "Reprobado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## `ELIF`\n",
+        "\n",
+        "El comando `elif` es una palabra clave en Python que significa \"si no, si\" y lo podemos considerar una *contracción* entre `else` e `if`. Se utiliza en conjunto con la palabra clave `if` para formar una estructura condicional en cadena."
+      ],
+      "metadata": {
+        "id": "04T5g-7h4zWx"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "la sintaxis para utilizar el comando `elif` es:\n",
+        "\n",
+        "```\n",
+        "if condicion1:\n",
+        "    # Realiza algo\n",
+        "elif condicion2:\n",
+        "    # Realiza otra cosa\n",
+        "elif condicion3:\n",
+        "    # Realiza otra cosa\n",
+        "else:\n",
+        "    # Realiza algo diferente\n",
+        "```\n",
+        "\n",
+        "El comando `elif` permite que puedas verificar varias condiciones en cadena, economizando espacio en tu código. Si la primera condición se evalúa como `False`, el interpretador de Python evaluará la próxima condición con el `elif`. Ello continuará hasta que una condición sea evaluada como `True` o hasta que el `else` sea alcazado. Si ninguna de las condiciones es evaluada como `True`, la ejecución del código del comando `else` será iniciada."
+      ],
+      "metadata": {
+        "id": "rNBHr5mm1Lm6"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Vamos a emplear el mismo caso anterior:"
+      ],
+      "metadata": {
+        "id": "MVoykFbB4bd4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "promedio = float(input(\"Ingrese el promedio: \"))\n",
+        "\n",
+        "if promedio >= 7:\n",
+        "  print(\"Aprobado\")\n",
+        "elif 7 > promedio > 5:\n",
+        "  print(\"Recuperación\")\n",
+        "else:\n",
+        "  print(\"Reprobado\")"
+      ],
+      "metadata": {
+        "id": "QFamB78s-TW_",
+        "outputId": "07826aa7-20f2-44f8-b13b-689dfbb9367e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el promedio: 5.2\n",
+            "Recuperación\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Operadores\n",
+        "\n",
+        "Durante la construcción de comandos a veces necesitamos de una elaboración mayor de la expresión condicional, necesitando que algunos operadores lógicos se encuentren integrados."
+      ],
+      "metadata": {
+        "id": "Tf1wSOem6iwZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### `AND`, `OR`, `NOT`\n",
+        "\n",
+        "Los operadores lógicos `and`, `or` y `not` son usados para combinar expresiones lógicas en Python. Ellos son usados frecuentemente en conjunto con el comando `if` para crear estructuras condicionales más complejas.\n"
+      ],
+      "metadata": {
+        "id": "GFIZnRWXGPWO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- `AND` es usado para verificar si dos condiciones son verdaderas. La expresión lógica¹ `x and y` se evalúa como `True` tan solo si **ambas condiciones `x` y `y` son verdaderas**, y como `False` en caso contrario.\n",
+        "\n",
+        "- `OR` es usado para verificar si al menos una de las condiciones es verdadera. La expresión lógica `x or y` se evalúa como `True` **si al menos una de las condiciones `x` o `y` es verdadera**, y como `False` si ambas condiciones son falsas.\n",
+        "\n",
+        "- `NOT` es usado para **negar una condición**. La expresión lógica `not x` es evaluada como `True` si la condición x es falsa, y como `False` si la condición x es verdadera.\n",
+        "\n",
+        "¹ Una expresión lógica es una declaración que puede ser evaluada como verdadera o falsa. Ella se compone por operandos lógicos² y por operadores lógicos³, que son usados ​​para combinar varias expresiones lógicas en una única expresión.\n",
+        "\n",
+        "² Los operandos lógicos son los elementos que son comparados o evaluados en una expresión lógica. Ellos son generalmente valores verdaderos o falsos, pero también pueden ser expresiones lógicas más complejas. En Python, los operandos lógicos son los valores `True` y `False`.\n",
+        "\n",
+        "³ Los operadores lógicos son ls símbolos o palabras clave que son usados ​​para combinar varias expresiones lógicas en una única expresión. En Python, los operadores lógicos son `and`, `or` y `not`, bien como las palabras clave `if`, `elif` e `else`."
+      ],
+      "metadata": {
+        "id": "Z_dgAoHXJbzB"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "> Operadores lógicos más comunes\n",
+        "\n",
+        "|a|b|AND|OR|NOT|\n",
+        "|-|-|-|-|-|\n",
+        "|0|0|0|0|1\n",
+        "|0|1|0|1|-\n",
+        "|1|0|0|1|-\n",
+        "|1|1|1|1|0\n"
+      ],
+      "metadata": {
+        "id": "2E5aUogf-49u"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = True\n",
+        "y = False"
+      ],
+      "metadata": {
+        "id": "DFKmpvmS-Pa6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x and y:\n",
+        "  print(\"Verdadero\")\n",
+        "elif x or y:\n",
+        "  print(\"Algo verdadero\")\n",
+        "else:\n",
+        "  print(\"Falso\")"
+      ],
+      "metadata": {
+        "id": "W5BIrpOD-PeI",
+        "outputId": "d682e111-90d3-4c63-9fb5-263e1a8e9566",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Algo verdadero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if not y:\n",
+        "  print(\"Verdadero\")\n",
+        "else:\n",
+        "  print(\"Falso\")"
+      ],
+      "metadata": {
+        "id": "fpDhYxq4-PiM",
+        "outputId": "e6af4515-0664-4034-8718-fded9643e618",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Verdadero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### `IN`\n",
+        "\n",
+        "Es usado para verificar si un elemento está presente en una lista, tupla u otra colección de conjunto. La expresión `x in y` se evalúa como `True` si el elemento `x` esta presente na variávelen la variable de conjunto `y`, y como `False` en caso contrario."
+      ],
+      "metadata": {
+        "id": "w7EXG1dhWtja"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Podemos verificarlo con variables de texto.\n",
+        "\n",
+        "---\n",
+        "\n",
+        "**Situación:**\n",
+        "\n",
+        "En la escuela nos entregaron una lista con nombres de estudiantes que fueron aprobados según el promedio del semestre, pero es necesario verificar si algunos nombres están en esa lista para confirmar que los datos estén correctos.\n",
+        "\n",
+        "La lista distribuida puede ser observada a continuación:\n",
+        "\n",
+        "```\n",
+        "lista = 'Juan Pérez, María González, Pedro Rodríguez, Ana López, Carlos Martínez,\n",
+        "    Laura Sánchez, José García, Elena Fernández, Luis Morales, Carmen Torres,\n",
+        "    David Ruiz, Isabel Ramírez, Javier Díaz, Sara Herrera, Miguel Castro,\n",
+        "    Patricia Ortega, Francisco Vargas, Marta Jiménez, Manuel Medina, Rosa Molina,\n",
+        "    Alejandro Silva, Silvia Ruiz, Andrés Torres, Natalia Soto, Diego Guerrero,\n",
+        "    Paula Ríos, Ricardo Navarro, Alicia Cordero, Carlos Vidal, Lorena Gómez'\n",
+        "```\n",
+        "\n",
+        "Los nombres que necesitas verificar son los siguientes:\n",
+        "\n",
+        "```\n",
+        "nombre_1 = 'Miguel Castro'\n",
+        "nombre_2 = 'Marcelo Noguera'\n",
+        "```"
+      ],
+      "metadata": {
+        "id": "enJNp6JenQbq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista = ['Juan Pérez', 'María González', 'Pedro Rodríguez', 'Ana López', 'Carlos Martínez',\n",
+        "   'Laura Sánchez', 'José García', 'Elena Fernández', 'Luis Morales', 'Carmen Torres',\n",
+        "    'David Ruiz', 'Isabel Ramírez', 'Javier Díaz','Sara Herrera','Miguel Castro',\n",
+        "    'Patricia Ortega', 'Francisco Vargas', 'Marta Jiménez', 'Manuel Medina', 'Rosa Molina',\n",
+        "    'Alejandro Silva', 'Silvia Ruiz', 'Andrés Torres', 'Natalia Soto', 'Diego Guerrero',\n",
+        "    'Paula Ríos', 'Ricardo Navarro', 'Alicia Cordero', 'Carlos Vidal', 'Lorena Gómez']"
+      ],
+      "metadata": {
+        "id": "GINbG3Fa-Mnb"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre_1 = 'Miguel Castro'\n",
+        "nombre_2 = 'Marcelo Noguera'"
+      ],
+      "metadata": {
+        "id": "hk-RhNRT-Mp7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if nombre_1 in lista:\n",
+        "  print(\"Verdadero\")\n",
+        "else:\n",
+        "  print(\"Falso\")"
+      ],
+      "metadata": {
+        "id": "mnJhsbPhSXAO",
+        "outputId": "918ecfde-2ce8-4651-addf-18629bf69922",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Verdadero\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if nombre_2 in lista:\n",
+        "  print(\"Verdadero\")\n",
+        "else:\n",
+        "  print(\"False\")"
+      ],
+      "metadata": {
+        "id": "-xT30f6KSaHz",
+        "outputId": "127b3230-75c1-41a7-ad8f-1ce6788df6fb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Hora de practicar"
+      ],
+      "metadata": {
+        "id": "WEJSxCtmS2nE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = float(input(\"Ingrese un número: \"))\n",
+        "n2 = float(input(\"Ingrese otro número: \"))\n",
+        "\n",
+        "if n1 > n2:\n",
+        "  print(f'El número mayor es {n1}')\n",
+        "else:\n",
+        "  print(f'El número mayor es {n2}')"
+      ],
+      "metadata": {
+        "id": "JNOoFsBUS5EQ",
+        "outputId": "945beaed-496a-4d98-8503-3e249593792b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un número: 5\n",
+            "Ingrese otro número: 7\n",
+            "El número mayor es 7.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "porc_crecimiento = float(input(\"Ingrese el procentaje de crecimiento de producción: \"))\n",
+        "\n",
+        "if porc_crecimiento > 0:\n",
+        "  print(\"Porcentaje positivo\")\n",
+        "elif porc_crecimiento == 0:\n",
+        "  print(\"Neutro\")\n",
+        "else:\n",
+        "  print(\"Porcentaje negativo\")"
+      ],
+      "metadata": {
+        "id": "PwMRC9IyTVNu",
+        "outputId": "210b0683-39bf-42f0-f338-2509662856a2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el procentaje de crecimiento de producción: 8\n",
+            "Porcentaje positivo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "letra = str(input(\"Ingrese una letra: \")).lower()\n",
+        "vocales = ['a', 'e', 'i', 'o','u']\n",
+        "\n",
+        "if letra in vocales:\n",
+        "  print(\"Vocal\")\n",
+        "else:\n",
+        "  print(\"Consonante\")"
+      ],
+      "metadata": {
+        "id": "782-K_5_T8g1",
+        "outputId": "6a1fa382-fbec-4c33-de3b-d0697791cdc1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese una letra: I\n",
+            "Vocal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = float(input(\"Ingrese un número: \"))\n",
+        "n2 = float(input(\"Ingrese otro número: \"))\n",
+        "operacion = str(input(\"Ingrese la operación a realizar: + - / *\"))\n",
+        "\n",
+        "if operacion == '+':\n",
+        "  resultado = n1+n2\n",
+        "elif operacion == '-':\n",
+        "  resultado = n1-n2\n",
+        "elif operacion == '/':\n",
+        "  resultado = n1/n2\n",
+        "elif operacion == '*':\n",
+        "  resultado = n1*n2\n",
+        "else:\n",
+        "  print('operación no válida')\n",
+        "\n",
+        "if resultado % 1 == 0:\n",
+        "    print('El resultado es un número entero.')\n",
+        "else:\n",
+        "    print('El resultado es un número decimal.')\n",
+        "\n",
+        "if resultado > 0:\n",
+        "    print('El resultado es positivo.')\n",
+        "else:\n",
+        "    print('El resultado es negativo.')\n",
+        "\n",
+        "if resultado % 2 == 0:\n",
+        "    print('El resultado es un número par.')\n",
+        "else:\n",
+        "    print('El resultado es un número impar.')"
+      ],
+      "metadata": {
+        "id": "HyjGGp9JU4qR",
+        "outputId": "447071dd-9e75-468f-d70a-f308a327f614",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un número: 6\n",
+            "Ingrese otro número: 6\n",
+            "Ingrese la operación a realizar: + - / */\n",
+            "El resultado es un número entero.\n",
+            "El resultado es positivo.\n",
+            "El resultado es un número impar.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Escribe un programa que pida a la persona usuaria tres números que representan los lados de un triángulo. El programa debe informar si los valores pueden utilizarse para formar un triángulo y, en caso afirmativo, si es equilátero, isósceles o escaleno. Ten en cuenta algunas sugerencias:\n",
+        "\n",
+        "  Tres lados forman un triángulo cuando la suma de cualesquiera dos lados es mayor que el tercero;\n",
+        "- Triángulo Equilátero: tres lados iguales;\n",
+        "- Triángulo Isósceles: dos lados iguales;\n",
+        "- Triángulo Escaleno: tres lados diferentes.\n",
+        "\n",
+        "2. Un establecimiento está vendiendo combustibles con descuentos variables. Para el etanol, si la cantidad comprada es de hasta 15 litros, el descuento será del 2% por litro. En caso contrario, será del 4% por litro. Para el diésel, si la cantidad comprada es de hasta 15 litros, el descuento será del 3% por litro. En caso contrario, será del 5% por litro. El precio por litro de diésel es de R$ 2,00 y el precio por litro de etanol es de R$ 1,70. Escribe un programa que lea la cantidad de litros vendidos y el tipo de combustible (E para etanol y D para diésel) y calcule el valor a pagar por el cliente. Ten en cuenta algunas sugerencias:\n",
+        "\n",
+        "- El valor del descuento será el producto del precio por litro, la cantidad de litros y el valor del descuento.\n",
+        "- El valor a pagar por un cliente será el resultado de la multiplicación del precio por litro por la cantidad de litros menos el valor del descuento resultante del cálculo.\n",
+        "\n",
+        "3. En una empresa de venta de bienes raíces, debes crear un código que analice los datos de ventas anuales para ayudar a la dirección en la toma de decisiones. El código debe recopilar los datos de cantidad de ventas durante los años 2022 y 2023 y calcular la variación porcentual. A partir del valor de la variación, se deben proporcionar las siguientes sugerencias:\n",
+        "\n",
+        "- Para una variación superior al 20%: bonificación para el equipo de ventas.\n",
+        "- Para una variación entre el 2% y el 20%: pequeña bonificación para el equipo de ventas.\n",
+        "- Para una variación entre el 2% y el -10%: planificación de políticas de incentivo a las ventas.\n",
+        "- Para bonificaciones inferiores al -10%: recorte de gastos."
+      ],
+      "metadata": {
+        "id": "v0mNhtLEZxQu"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Estructuras de repetición"
+      ],
+      "metadata": {
+        "id": "aL1vJPewvwvz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Cuando tenemos que ejecutar un mismo bloque de comandos durante varias ocasiones no es nada práctico hacerlo a mano.\n",
+        "\n",
+        "**Situación**: Nos fue solicitado obtener e imprimir el promedio de 2 notas de **3 estudantes**:"
+      ],
+      "metadata": {
+        "id": "VcPfCa8d-84t"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota_1 = float(input(\"Ingrese nota 1: \"))\n",
+        "nota_2 = float(input(\"Ingrese nota 2: \"))\n",
+        "\n",
+        "print(f'El promedio del estudiante 1 es {(nota_1 + nota_2)/2}')"
+      ],
+      "metadata": {
+        "id": "xcx21IGT9qA0",
+        "outputId": "0f54bddb-767d-4230-8a8d-9909cd436c49",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese nota 1: 12\n",
+            "Ingrese nota 2: 20\n",
+            "El promedio del estudiante 1 es 16.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota_1 = float(input(\"Ingrese nota 1: \"))\n",
+        "nota_2 = float(input(\"Ingrese nota 2: \"))\n",
+        "\n",
+        "print(f'El promedio del estudiante 2 es {(nota_1 + nota_2)/2}')"
+      ],
+      "metadata": {
+        "id": "Wtbiy9Ay9rGJ",
+        "outputId": "592aca16-b07b-4ff6-a45b-043eb3c1f390",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese nota 1: 12\n",
+            "Ingrese nota 2: 15\n",
+            "El promedio del estudiante 2 es 13.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota_1 = float(input(\"Ingrese nota 1: \"))\n",
+        "nota_2 = float(input(\"Ingrese nota 2: \"))\n",
+        "\n",
+        "print(f'El promedio del estudiante 3 es {(nota_1 + nota_2)/2}')"
+      ],
+      "metadata": {
+        "id": "Yfyz4anY9rIr",
+        "outputId": "ba17a1c4-b2a6-49ac-dd9e-09d822fad2e0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese nota 1: 16\n",
+            "Ingrese nota 2: 18\n",
+            "El promedio del estudiante 3 es 17.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ahora imaginemos una situación en que no son tan solo 3 estudiantes, sino 100 estudiantes. No sería nada interesante repetir el mismo código 100 veces, sino **ejecutar el mismo código 100 veces**.\n",
+        "\n",
+        "¡Esta estructura la logramos construir con lazos de repetición!"
+      ],
+      "metadata": {
+        "id": "9puIuvUbFSFX"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## `WHILE`"
+      ],
+      "metadata": {
+        "id": "uLO9-aE4-wx8"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "El lazo `while` es una estructura de control de repetición en Python que permite ejecutar un bloque de código repetidamente mientras que una determinada condición sea verdadera. Su estructura es:\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "while condicion:\n",
+        "    # bloque de codigo\n",
+        "```\n",
+        "\n",
+        "Vamos a construir un ejemplo con un contador de 1 hasta 10.\n"
+      ],
+      "metadata": {
+        "id": "rXZxDMiqHxm9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count= 1\n",
+        "while count <= 10:\n",
+        "  print(count)\n",
+        "  count +=1"
+      ],
+      "metadata": {
+        "id": "Hd0ZSWxD9wCD",
+        "outputId": "613e81af-9b49-4718-c269-29082cdf2afd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ahora vamos a colectar las notas y promedios de cada alumno dentro del lazo `while`. Haremos un ejemplo con 3 promedios."
+      ],
+      "metadata": {
+        "id": "W4KZPBJuIrut"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count=1\n",
+        "\n",
+        "while count <=3:\n",
+        "  nota_1 = float(input(\"Ingrese nota 1: \"))\n",
+        "  nota_2 = float(input(\"Ingrese nota 2: \"))\n",
+        "  nota_3 = float(input(\"Ingrese nota 3: \"))\n",
+        "  print(f'El promedio del estudiante {count} es {(nota_1 + nota_2)/2}')\n",
+        "  count +=1"
+      ],
+      "metadata": {
+        "id": "9T5eCLFx9wk6",
+        "outputId": "722f0241-9e64-4fb6-c815-1b80ca2e85df",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese nota 1: 13\n",
+            "Ingrese nota 2: 10\n",
+            "Ingrese nota 3: 14\n",
+            "El promedio del estudiante 1 es 11.5\n",
+            "Ingrese nota 1: 12\n",
+            "Ingrese nota 2: 15\n",
+            "Ingrese nota 3: 16\n",
+            "El promedio del estudiante 2 es 13.5\n",
+            "Ingrese nota 1: 15\n",
+            "Ingrese nota 2: 17\n",
+            "Ingrese nota 3: 13\n",
+            "El promedio del estudiante 3 es 16.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## `FOR`"
+      ],
+      "metadata": {
+        "id": "WgAIaENMMfCP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "El lazo `for` es un tipo de estructura de control de flujo en Python que permite iterar sobre un conjunto de elementos. Su estructura es:\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        "for elemento in conjunto:\n",
+        "    # codigo a ser ejecutado para cada elemento\n",
+        "```\n",
+        "\n",
+        "El lazo `for` itera sobre cada elemento del conjunto especificado y ejecuta el bloque de código dentro del lazo para cada elemento. Cuando el lazo llega al final del conjunto, este se interrumpe y el programa continúa la ejecución después del lazo.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "HxrSZoRAMh-x"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "El conjunto lo podemos generar con la función incorporada [`range()`](https://docs.python.org/3/library/functions.html#func-range). Se trata de una función capaz de generar una secuencia de números enteros. La estructura de esta función es:\n",
+        "\n",
+        "```\n",
+        "range(inicio, fin, paso)\n",
+        "```\n",
+        "\n",
+        "Según la documentación, `range()` genera una secuencia de números enteros a partir del valor del parámetro `inicio` hasta el valor del parámetro `fin`, de acuerdo con el valor del parámetro `paso`. Si `inicio` no es especificado, el valor por defecto es `0`. Si `paso` no es especificado, el valor por defecto es `1`.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "6VgjyoQtPHBM"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Vamos a recrear el mismo contador `while` con el lazo `for`."
+      ],
+      "metadata": {
+        "id": "ryn0hfdlUwC8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for count in range(1,11):\n",
+        "  print(count)"
+      ],
+      "metadata": {
+        "id": "KkL1wUIj9jL4",
+        "outputId": "b0027962-8d1d-46a5-a41c-62054a77e6c5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Hora de practicar"
+      ],
+      "metadata": {
+        "id": "RBdyeB0YPRFC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = int(input(\"Ingrese un número entero: \"))\n",
+        "n2 = int(input(\"Ingrese otro número entero: \"))\n",
+        "\n",
+        "for num in range(n1+1,n2):\n",
+        "  print(num)"
+      ],
+      "metadata": {
+        "id": "x1M4hnIPPUwx",
+        "outputId": "255a67e8-382e-47e0-fa80-061caed8dfdb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un número entero: 12\n",
+            "Ingrese otro número entero: 16\n",
+            "13\n",
+            "14\n",
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "colonia_a = 4\n",
+        "colonia_b = 10\n",
+        "dias=1\n",
+        "\n",
+        "while colonia_a <= colonia_b:\n",
+        "  colonia_a = colonia_a + colonia_a*0.03\n",
+        "  colonia_b = colonia_b + colonia_b*0.015\n",
+        "  print(f'Dia {dias}, colonia A: {colonia_a}, colonia B: {colonia_b}')\n",
+        "  dias+=1"
+      ],
+      "metadata": {
+        "id": "6ly9Gi9EPxVd",
+        "outputId": "b901abb8-0d49-4aa9-a9ee-144f2c7243b5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dia 1, colonia A: 4.12, colonia B: 10.15\n",
+            "Dia 2, colonia A: 4.2436, colonia B: 10.30225\n",
+            "Dia 3, colonia A: 4.370908, colonia B: 10.456783750000001\n",
+            "Dia 4, colonia A: 4.50203524, colonia B: 10.61363550625\n",
+            "Dia 5, colonia A: 4.637096297199999, colonia B: 10.77284003884375\n",
+            "Dia 6, colonia A: 4.776209186116, colonia B: 10.934432639426406\n",
+            "Dia 7, colonia A: 4.91949546169948, colonia B: 11.098449129017803\n",
+            "Dia 8, colonia A: 5.067080325550465, colonia B: 11.26492586595307\n",
+            "Dia 9, colonia A: 5.219092735316979, colonia B: 11.433899753942367\n",
+            "Dia 10, colonia A: 5.375665517376488, colonia B: 11.605408250251502\n",
+            "Dia 11, colonia A: 5.536935482897783, colonia B: 11.779489374005275\n",
+            "Dia 12, colonia A: 5.703043547384716, colonia B: 11.956181714615354\n",
+            "Dia 13, colonia A: 5.874134853806257, colonia B: 12.135524440334585\n",
+            "Dia 14, colonia A: 6.050358899420445, colonia B: 12.317557306939603\n",
+            "Dia 15, colonia A: 6.231869666403059, colonia B: 12.502320666543698\n",
+            "Dia 16, colonia A: 6.41882575639515, colonia B: 12.689855476541853\n",
+            "Dia 17, colonia A: 6.6113905290870045, colonia B: 12.88020330868998\n",
+            "Dia 18, colonia A: 6.809732244959615, colonia B: 13.07340635832033\n",
+            "Dia 19, colonia A: 7.014024212308403, colonia B: 13.269507453695136\n",
+            "Dia 20, colonia A: 7.224444938677655, colonia B: 13.468550065500562\n",
+            "Dia 21, colonia A: 7.441178286837984, colonia B: 13.67057831648307\n",
+            "Dia 22, colonia A: 7.664413635443124, colonia B: 13.875636991230316\n",
+            "Dia 23, colonia A: 7.894346044506417, colonia B: 14.08377154609877\n",
+            "Dia 24, colonia A: 8.131176425841609, colonia B: 14.295028119290253\n",
+            "Dia 25, colonia A: 8.375111718616857, colonia B: 14.509453541079607\n",
+            "Dia 26, colonia A: 8.626365070175362, colonia B: 14.727095344195801\n",
+            "Dia 27, colonia A: 8.885156022280624, colonia B: 14.948001774358739\n",
+            "Dia 28, colonia A: 9.151710702949043, colonia B: 15.17222180097412\n",
+            "Dia 29, colonia A: 9.426262024037515, colonia B: 15.399805127988731\n",
+            "Dia 30, colonia A: 9.70904988475864, colonia B: 15.630802204908562\n",
+            "Dia 31, colonia A: 10.000321381301399, colonia B: 15.86526423798219\n",
+            "Dia 32, colonia A: 10.30033102274044, colonia B: 16.103243201551923\n",
+            "Dia 33, colonia A: 10.609340953422654, colonia B: 16.344791849575202\n",
+            "Dia 34, colonia A: 10.927621182025334, colonia B: 16.589963727318832\n",
+            "Dia 35, colonia A: 11.255449817486094, colonia B: 16.838813183228613\n",
+            "Dia 36, colonia A: 11.593113312010676, colonia B: 17.09139538097704\n",
+            "Dia 37, colonia A: 11.940906711370996, colonia B: 17.347766311691696\n",
+            "Dia 38, colonia A: 12.299133912712126, colonia B: 17.607982806367072\n",
+            "Dia 39, colonia A: 12.66810793009349, colonia B: 17.87210254846258\n",
+            "Dia 40, colonia A: 13.048151167996293, colonia B: 18.140184086689516\n",
+            "Dia 41, colonia A: 13.439595703036183, colonia B: 18.412286847989858\n",
+            "Dia 42, colonia A: 13.842783574127267, colonia B: 18.688471150709706\n",
+            "Dia 43, colonia A: 14.258067081351085, colonia B: 18.968798217970352\n",
+            "Dia 44, colonia A: 14.685809093791617, colonia B: 19.253330191239908\n",
+            "Dia 45, colonia A: 15.126383366605365, colonia B: 19.542130144108505\n",
+            "Dia 46, colonia A: 15.580174867603526, colonia B: 19.83526209627013\n",
+            "Dia 47, colonia A: 16.047580113631632, colonia B: 20.132791027714184\n",
+            "Dia 48, colonia A: 16.529007517040583, colonia B: 20.434782893129896\n",
+            "Dia 49, colonia A: 17.0248777425518, colonia B: 20.741304636526845\n",
+            "Dia 50, colonia A: 17.535624074828355, colonia B: 21.052424206074747\n",
+            "Dia 51, colonia A: 18.061692797073206, colonia B: 21.368210569165868\n",
+            "Dia 52, colonia A: 18.603543580985402, colonia B: 21.688733727703355\n",
+            "Dia 53, colonia A: 19.161649888414964, colonia B: 22.014064733618905\n",
+            "Dia 54, colonia A: 19.73649938506741, colonia B: 22.34427570462319\n",
+            "Dia 55, colonia A: 20.328594366619434, colonia B: 22.679439840192536\n",
+            "Dia 56, colonia A: 20.938452197618016, colonia B: 23.019631437795425\n",
+            "Dia 57, colonia A: 21.566605763546555, colonia B: 23.364925909362356\n",
+            "Dia 58, colonia A: 22.21360393645295, colonia B: 23.715399798002792\n",
+            "Dia 59, colonia A: 22.88001205454654, colonia B: 24.071130794972834\n",
+            "Dia 60, colonia A: 23.566412416182935, colonia B: 24.432197756897427\n",
+            "Dia 61, colonia A: 24.273404788668422, colonia B: 24.79868072325089\n",
+            "Dia 62, colonia A: 25.001606932328475, colonia B: 25.170660934099654\n",
+            "Dia 63, colonia A: 25.75165514029833, colonia B: 25.54822084811115\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cantidad = 1\n",
+        "while cantidad <= 15:\n",
+        "  calificacion = float(input(\"Ingrese una calificación: \"))\n",
+        "  if calificacion > 5:\n",
+        "    print(\"Ingrese una calificación menor que 5\")\n",
+        "    continue\n",
+        "  elif calificacion < 0:\n",
+        "    print(\"Ingrese una calificación mayor o igual que 0\")\n",
+        "    continue\n",
+        "  else:\n",
+        "    print(f'La calificación es {calificacion}')\n",
+        "  cantidad +=1\n"
+      ],
+      "metadata": {
+        "id": "EAUbFjJvSlD1",
+        "outputId": "085431a6-a12a-4a8f-c3d5-c0283a0aa705",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese una calificación: 1\n",
+            "La calificación es 1.0\n",
+            "Ingrese una calificación: 2\n",
+            "La calificación es 2.0\n",
+            "Ingrese una calificación: 3\n",
+            "La calificación es 3.0\n",
+            "Ingrese una calificación: 4\n",
+            "La calificación es 4.0\n",
+            "Ingrese una calificación: 5\n",
+            "La calificación es 5.0\n",
+            "Ingrese una calificación: 6\n",
+            "Ingrese una calificación menor que 5\n",
+            "Ingrese una calificación: 7\n",
+            "Ingrese una calificación menor que 5\n",
+            "Ingrese una calificación: 5\n",
+            "La calificación es 5.0\n",
+            "Ingrese una calificación: 4\n",
+            "La calificación es 4.0\n",
+            "Ingrese una calificación: 3\n",
+            "La calificación es 3.0\n",
+            "Ingrese una calificación: 2\n",
+            "La calificación es 2.0\n",
+            "Ingrese una calificación: 1\n",
+            "La calificación es 1.0\n",
+            "Ingrese una calificación: 0\n",
+            "La calificación es 0.0\n",
+            "Ingrese una calificación: 5\n",
+            "La calificación es 5.0\n",
+            "Ingrese una calificación: 4\n",
+            "La calificación es 4.0\n",
+            "Ingrese una calificación: 3\n",
+            "La calificación es 3.0\n",
+            "Ingrese una calificación: 2\n",
+            "La calificación es 2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperatura = 1\n",
+        "while temperatura != 273:\n",
+        "  temperatura = float(input(\"Ingrese una temperatura:\"))\n",
+        "  temperatura = temperatura\n",
+        "  print(f'La temperatura es {temperatura}')\n",
+        "  if temperatura == 273:\n",
+        "    break"
+      ],
+      "metadata": {
+        "id": "lhkBvw3VVQkZ",
+        "outputId": "0405c7a7-26a4-4b76-9ecd-fd108002cb31",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese una temperatura:30\n",
+            "La temperatura es 30.0\n",
+            "Ingrese una temperatura:40\n",
+            "La temperatura es 40.0\n",
+            "Ingrese una temperatura:100\n",
+            "La temperatura es 100.0\n",
+            "Ingrese una temperatura:150\n",
+            "La temperatura es 150.0\n",
+            "Ingrese una temperatura:273\n",
+            "La temperatura es 273.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Ingresa un número entero: \"))\n",
+        "factorial = 1\n",
+        "\n",
+        "for x in range(1,num+1):\n",
+        "  factorial = factorial*x\n",
+        "  print(f'El factorial de {x} es {factorial}')\n",
+        "\n",
+        "print(f'El factorial de {num} es {factorial}')"
+      ],
+      "metadata": {
+        "id": "pmqjb7HHVQPg",
+        "outputId": "97fbb0cf-7cbc-4236-ab49-6d19ed47b74f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa un número entero: 5\n",
+            "El factorial de 1 es 1\n",
+            "El factorial de 2 es 2\n",
+            "El factorial de 3 es 6\n",
+            "El factorial de 4 es 24\n",
+            "El factorial de 5 es 120\n",
+            "El factorial de 5 es 120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = int(input(\"Ingrese un número entero: \"))\n",
+        "\n",
+        "if numero > 0:\n",
+        "  for x in range(2, numero):\n",
+        "    if numero % x == 0:\n",
+        "      print(f'El número {numero} no es primo')\n",
+        "      break\n",
+        "    else:\n",
+        "      print(f'El número {numero} es primo')\n",
+        "      break"
+      ],
+      "metadata": {
+        "id": "bONgaxEMXehL",
+        "outputId": "fd9da106-9383-424a-9749-1414715b6c14",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un número entero: 3\n",
+            "El número 3 es primo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Estructuras de datos"
+      ],
+      "metadata": {
+        "id": "8noP8OJ0Vhux"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Un conjunto de elementos es una colección de items, que son almacenados juntos de manera organizada. Algunos ejemplos de conjuntos de elementos en Python son las listas, los strings y los diccionarios."
+      ],
+      "metadata": {
+        "id": "xpEUkefTu8fY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Listas"
+      ],
+      "metadata": {
+        "id": "THSg4KYLwxIb"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Las listas pueden almacenar una colección de items en orden. Ellas son delimitadas por corchetes `[]` y sus elementos son separados por comas.\n",
+        "\n",
+        "Estas pueden almacenar cualquier tipo de items, incluyendo números, strings, objetos, otras listas, entre otros. También nos permiten almacenar items de tipos de datos diferentes juntos en una única lista."
+      ],
+      "metadata": {
+        "id": "dzpsiqrOyJcK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista = ['Penélope Camacho',9.5,9.0,9.7,True]\n",
+        "lista"
+      ],
+      "metadata": {
+        "id": "DO3TBj7nAYeG",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fbee2eb5-265e-4b5b-badf-a0dd9331074b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Penélope Camacho', 9.5, 9.0, 9.7, True]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 62
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "DO2ubP9N9D_2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Las listas son organizadas en Python porque **cada elemento de la lista tiene un índice que indica su posición al interior de la lista**. Los índices comienzan en 0 van hasta el tamaño de la lista menos 1."
+      ],
+      "metadata": {
+        "id": "qUz3sJNl6LgK"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tenemos entonces 5 elementos con índices que varían de 0 a 4, ordenadamente:\n",
+        "\n",
+        "```\n",
+        "#             [0]           [1]   [2]   [3]    [4]\n",
+        "lista = ['Penélope Camacho', 9.5 , 9.0 , 9.7 , True]\n",
+        "```\n",
+        "\n",
+        "En Python tenemos también los índices **negativos** que se inician en el último elemento con el valor de `-1` y avanzan en el universo de los negativos hasta llegar al 1° elemento:\n",
+        "\n",
+        "```\n",
+        "#             [-5]         [-4]  [-3]  [-2]   [-1]\n",
+        "lista = ['Penélope Camacho', 9.5 , 9.0 , 9.7 , True]\n",
+        "```\n",
+        "\n",
+        "Logramos seleccionar separadamente cada elemento a través de sus respectivos índices. Colocando el nombre de la lista y en seguida el índice que será seleccionado."
+      ],
+      "metadata": {
+        "id": "rLf-Qg526hFD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "4hco1Zqy88Kw"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "M8lH0I2288Ph"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Una forma más dinámica de trabajar item a item en una lista es utilizando un lazo `for` para leer un elemento a la vez."
+      ],
+      "metadata": {
+        "id": "6TaE1ijmBTCd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "rBx4Yu1786Sy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Situación**: La nota `9.0` de Penélope necesita ser ajustada pues ganó 1 punto en su última nota por participación en clase. Entonces es necesario realizar un cambio en el índice `2` de `9.0` a `10.0`."
+      ],
+      "metadata": {
+        "id": "Dh1_HnIVvucY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bVPoZg668z3T"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Jo_PBQ0g8z7D"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "También podemos calcular el promedio del estudiante a partir de los datos que tenemos."
+      ],
+      "metadata": {
+        "id": "53XduzXkycAf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "SIH61Rrb8yv4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Manipulación de listas\n",
+        "\n",
+        "Las listas son muy útiles en Python porque nos permiten almacenar y acceder a una colección de items de manera organizada y rápida. Estas también ofrecen muchos métodos útiles para manipular los itens almacenados, como adicionar, remover, clasificar y buscar elementos."
+      ],
+      "metadata": {
+        "id": "d-iYr10-y4qw"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Cantidad de elementos\n",
+        "\n",
+        "Usamos la función [`len()`](https://docs.python.org/3/library/functions.html#len) para descubrir la cantidad de elementos de un conjunto."
+      ],
+      "metadata": {
+        "id": "ZLqx9A97XVB_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "6q1Tmm7P8wQf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Partición\n",
+        "\n",
+        "La partición de listas por indexación en Python es una técnica muy útil para seleccionar un subconjunto de elementos de una lista. Esta se realiza usando la sintaxis `lista[inicio:fin]`, donde `inicio` es el índice del primer elemento que será incluído en la partición `fin` es el índice del primer elemento que será excluído de la partición."
+      ],
+      "metadata": {
+        "id": "Z5tpstlHJss3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "NctvJTTU8uV9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bQZUwldj8uY2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### [`append()`](https://docs.python.org/3/tutorial/datastructures.html#:~:text=of%20list%20objects%3A-,list.append(x),-Add%20an%20item)\n",
+        "\n",
+        "Añade un elemento al final de la lista."
+      ],
+      "metadata": {
+        "id": "O0RRyabkRzZC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "_Q0oODwa8spC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "RM894r2M8sse"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### [`extend()`](https://docs.python.org/3/tutorial/datastructures.html#:~:text=list.extend(iterable))\n",
+        "\n",
+        "Añade varios elementos al final de la lista.\n",
+        "\n",
+        "Añadiremos las notas `[10.0,8.0,9.0]` En la lista de Penélope Camacho."
+      ],
+      "metadata": {
+        "id": "uQV91XMsUOJD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "6Zk2MpMw8rQc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "NnoKkoWb8rTQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "*A continuación te mostraremos lo que no puede realizarse con* `append`."
+      ],
+      "metadata": {
+        "id": "IVJvkTwNUk6M"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "u3Eub2ZL8pp3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "tsKK5Ne58pvN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### [`remove()`](https://docs.python.org/3/tutorial/datastructures.html#:~:text=append(x).-,list.remove(x),-Remove%20the%20first)\n",
+        "\n",
+        "Remueve un elemento específico de la lista."
+      ],
+      "metadata": {
+        "id": "dPGM5gpyUX1z"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "mmboODPc8nd5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "T_w6vVgV8nh_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Diccionario"
+      ],
+      "metadata": {
+        "id": "Rc22Vc08YDZ2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Los diccionarios son un tipo de estructura de datos que almacenan pares de *llave-valor*. Estos son delimitados por llaves `{}` y los pares *llave-valor* son separados por comas.\n",
+        "\n",
+        "```\n",
+        "diccionario = {llave: valor}\n",
+        "```\n",
+        "\n",
+        "La **llave** es un elemento único que identifica a un valor en el diccionario, mientras que el **valor** es el item que será almacenado para la llave. Las llaves y sus respectivos valores se pueden emplear para **cualquier tipo de dato**.\n",
+        "\n",
+        "Los diccionarios son útiles para almacenar y acceder a los datos de manera organizada y rápida. Se trata de un tipo de conjunto de elementos en Python, pues almacenan una colección de items."
+      ],
+      "metadata": {
+        "id": "PJ-cCKPjeWxL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "NDHhzooE8ld5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "AVOzqzy-8lhh"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "---\n",
+        "**Situación:**\n",
+        "\n",
+        "Vamos a crear un conjunto de datos con las informaciones de matrícula de un estudiante. Los datos son los siguientes:\n",
+        "\n",
+        "- matrícula: 2000168933\n",
+        "- día de registro: 25\n",
+        "- mes de registro: 10\n",
+        "- grupo: 2E"
+      ],
+      "metadata": {
+        "id": "_JbQ3KMKfkXU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "0lfOu_c38jED"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "XIuqpTTy8jHV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Es posible sustituir los valores dentro de una llave. Por ejemplo, recibimos la información de que el grupo del estudiante que registramos cambio a `'2G'` y ahora necesitamos cambiar el valor de la llave `'grupo'`."
+      ],
+      "metadata": {
+        "id": "8ex5pt2ykDd2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "kQGlp36b8fyP"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "DnfH_qHi8f17"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "También podemos añadir otros datos al diccionario. Vamos a añadir la información sobre la modalidad de estudio, nuestro estudiante estudiará inicialemente en la modalidad EAD.\n",
+        "\n",
+        "Definiremos una llave llamada `'modalidad'` con el valor `'EAD'`."
+      ],
+      "metadata": {
+        "id": "wB0qRb56mQvv"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "EeLYdlIm8d8a"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "olDIavsm8d_o"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Profundizando en diccionarios"
+      ],
+      "metadata": {
+        "id": "LJ3o_inroxg_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### [`pop()`](https://python-reference.readthedocs.io/en/latest/docs/dict/pop.html)\n",
+        "Remueve un item de un diccionario y lo representa en la salida."
+      ],
+      "metadata": {
+        "id": "2N3GLlkSpBiu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ZsSCZx6G8b-T"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "7lQ8_jpi8cBR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### [`items()`](https://python-reference.readthedocs.io/en/latest/docs/dict/items.html)\n",
+        "Retorna una lista de pares `llave-valor` del diccionario."
+      ],
+      "metadata": {
+        "id": "sYZGvJJYrW_y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ncdycLV08an7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### [`keys()`](https://python-reference.readthedocs.io/en/latest/docs/dict/keys.html)\n",
+        "Retorna una lista de las llaves del diccionario."
+      ],
+      "metadata": {
+        "id": "Lb0utNFGrZBY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "eZo0biaM8ZVs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### [`values()`](https://python-reference.readthedocs.io/en/latest/docs/dict/values.html)\n",
+        "Retorna una lista de los valores del diccionario."
+      ],
+      "metadata": {
+        "id": "qKyu3bf9rbtX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-NxRT9C18Yvo"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Lectura de valores con el lazo `for`"
+      ],
+      "metadata": {
+        "id": "e3XVjR8Frp75"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "NYcjU-Ip8Xan"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "aAnpP1Wv8XfJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
